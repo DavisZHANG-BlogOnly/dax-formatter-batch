@@ -20,9 +20,9 @@ windowWidth = 410
 windowHeight = 260
 positionRight = int(window.winfo_screenwidth()/2 - windowWidth/2)
 positionDown = int(window.winfo_screenheight()/2 - windowHeight/2)
-window.geometry('410x260+{}+{}'.format(positionRight, positionDown)) #窗口自动居中
+window.geometry('410x260+{}+{}'.format(positionRight, positionDown)) 
 window.configure(background='white')
-var = tk.StringVar(None,"D")    # 设定默认选项
+var = tk.StringVar(None,"D")   
 l = tk.Label(window, bg='#FFFFFF', width=20, font=('Arial', 12), text='格式化选项：')
 l.pack()
 
@@ -170,7 +170,7 @@ link1.bind("<Button-1>", lambda e: callback("https://d-bi.gitee.io/"))
 
 window.mainloop()
 
-'''【2020.7.3】项目已暂停. 修改DataModelSchema不会影响M代码的格式，它可能决定于DataMashup
-   而DataMashup是由数个FAT格式的文件所组成，它可以被解压，提取（使用7z）
-   但解压后无法再次被压缩成原格式，至少目前不清楚这种压缩技术的实现方式
-   因此即使修改了其中的Section1.m，但它暂时不能应用回PBIX或PBIT'''
+'''【2020.7.3】The project has been suspended. Modifying the datamodelschema will not affect the format of the M code, which may be determined by the datamashup.
+Datamashup is composed of several fat format files, which can be decompressed and extracted (using 7z).
+But after decompression, it can't be compressed into the original format again, at least the implementation of this compression technology is not clear.
+Therefore, even if section 1.m is modified, it cannot be applied back to PBIX or PBIT for the time being'''
